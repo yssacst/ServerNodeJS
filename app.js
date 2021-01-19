@@ -8,4 +8,7 @@ if (port == null || port == "") {
 app.get('/test',(req,res)=>{
     res.end('oi')
 })
+app.get('/json',(req,res)=>{
+  res.json({msg:'FOOOOOOOOOOOI'})
+})
 app.listen(port);
